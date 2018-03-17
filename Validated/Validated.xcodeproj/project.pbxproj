@@ -21,10 +21,17 @@
 		077EAEA8205D468F008F9D51 /* UITest.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAE9F205D468F008F9D51 /* UITest.xcconfig */; };
 		077EAEA9205D468F008F9D51 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAEA0205D468F008F9D51 /* Test.xcconfig */; };
 		077EAEAA205D468F008F9D51 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAEA1205D468F008F9D51 /* Project.xcconfig */; };
+		07C6EA95205D7ECC003FDB66 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6EA94205D7ECC003FDB66 /* RxSwift.framework */; };
+		07C6EA97205D7ED1003FDB66 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */; };
+		07C6EA9A205D7FC5003FDB66 /* ObservableMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA99205D7FC5003FDB66 /* ObservableMatching.swift */; };
 		07FBFD03205D683000E9746C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; };
 		07FBFD04205D683000E9746C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FBFD06205D683900E9746C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; };
 		07FBFD07205D683900E9746C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07FDA309205D74CF0075E411 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDA308205D74CF0075E411 /* FormModel.swift */; };
+		07FDA30B205D78620075E411 /* FormModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDA30A205D78620075E411 /* FormModelTests.swift */; };
+		07FDA30E205D78D60075E411 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDA30D205D78D60075E411 /* RxTest.framework */; };
+		07FDA310205D7CD00075E411 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDA30F205D7CD00075E411 /* RxBlocking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +90,15 @@
 		077EAEA0205D468F008F9D51 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		077EAEA1205D468F008F9D51 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		077EAEAE205D475D008F9D51 /* Validated.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Validated.xcconfig; sourceTree = "<group>"; };
+		07C6EA94205D7ECC003FDB66 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C6EA99205D7FC5003FDB66 /* ObservableMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMatching.swift; sourceTree = "<group>"; };
 		07FBFD02205D683000E9746C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FBFD05205D683900E9746C /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FDA308205D74CF0075E411 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		07FDA30A205D78620075E411 /* FormModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModelTests.swift; sourceTree = "<group>"; };
+		07FDA30D205D78D60075E411 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FDA30F205D7CD00075E411 /* RxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C6EA97205D7ED1003FDB66 /* RxCocoa.framework in Frameworks */,
+				07C6EA95205D7ECC003FDB66 /* RxSwift.framework in Frameworks */,
+				07FDA310205D7CD00075E411 /* RxBlocking.framework in Frameworks */,
+				07FDA30E205D78D60075E411 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +135,9 @@
 		073ABF44205D4A9D00261B80 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				07C6EA98205D7F73003FDB66 /* Rx */,
 				077EAE76205D407C008F9D51 /* ValidatedTests.swift */,
+				07FDA30A205D78620075E411 /* FormModelTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -151,13 +171,14 @@
 		077EAE55205D407B008F9D51 = {
 			isa = PBXGroup;
 			children = (
-				07FBFD05205D683900E9746C /* RxCocoa.framework */,
-				07FBFD02205D683000E9746C /* RxSwift.framework */,
 				077EAE60205D407B008F9D51 /* Validated */,
 				077EAE95205D468F008F9D51 /* Configurations */,
 				077EAE75205D407C008F9D51 /* ValidatedTests */,
 				077EAE80205D407C008F9D51 /* ValidatedUITests */,
 				077EAE5F205D407B008F9D51 /* Products */,
+				07FBFD05205D683900E9746C /* RxCocoa.framework */,
+				07FBFD02205D683000E9746C /* RxSwift.framework */,
+				07FDA30C205D78D60075E411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +263,7 @@
 		077EAEAB205D46B2008F9D51 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				07FDA307205D74B10075E411 /* Model */,
 				077EAE61205D407B008F9D51 /* AppDelegate.swift */,
 			);
 			path = Sources;
@@ -263,6 +285,33 @@
 				077EAEAE205D475D008F9D51 /* Validated.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		07C6EA98205D7F73003FDB66 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				07C6EA99205D7FC5003FDB66 /* ObservableMatching.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		07FDA307205D74B10075E411 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07FDA308205D74CF0075E411 /* FormModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07FDA30C205D78D60075E411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */,
+				07C6EA94205D7ECC003FDB66 /* RxSwift.framework */,
+				07FDA30F205D7CD00075E411 /* RxBlocking.framework */,
+				07FDA30D205D78D60075E411 /* RxTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				077EAE62205D407B008F9D51 /* AppDelegate.swift in Sources */,
+				07FDA309205D74CF0075E411 /* FormModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +481,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				077EAE77205D407C008F9D51 /* ValidatedTests.swift in Sources */,
+				07FDA30B205D78620075E411 /* FormModelTests.swift in Sources */,
+				07C6EA9A205D7FC5003FDB66 /* ObservableMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +558,7 @@
 		};
 		077EAE8B205D407D008F9D51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 077EAEAE205D475D008F9D51 /* Validated.xcconfig */;
+			baseConfigurationReference = 073ABF46205D4ACC00261B80 /* ValidatedTests.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;

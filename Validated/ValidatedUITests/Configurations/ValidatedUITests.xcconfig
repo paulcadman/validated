@@ -1,0 +1,8 @@
+#include "../../Configurations/Platforms/iOS.xcconfig"
+#include "../../Configurations/Targets/UITest.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = io.paulcadman.Validated
+DEVELOPMENT_TEAM = W46A5HMB5C
+INFOPLIST_FILE = ValidatedUITests/Configurations/Info.plist
+TEST_TARGET_NAME = Validated
+

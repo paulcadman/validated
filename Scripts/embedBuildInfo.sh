@@ -8,4 +8,3 @@ git_dirty='clean'
 fi
 /usr/libexec/PlistBuddy -c "Set :GIT_COMMIT `git rev-parse HEAD`" "${INFOPLIST_FULL_PATH}"
 /usr/libexec/PlistBuddy -c "Set :GIT_STATUS ${git_dirty}" "${INFOPLIST_FULL_PATH}"
-/usr/libexec/PlistBuddy -c "Set :BUDDYBUILD_BUILD_NUMBER ${BUDDYBUILD_BUILD_NUMBER}" "${INFOPLIST_FULL_PATH}"

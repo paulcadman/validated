@@ -387,7 +387,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"${SRCROOT}/../scripts/embedBuildInfo.sh\"";
+			shellScript = "/bin/sh \"${SRCROOT}/../Scripts/embedBuildInfo.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -461,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 077EAEAE205D475D008F9D51 /* Validated.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "--PRODUCT-BUNDLE-IDENTIFIER-";
 			};
 			name = Debug;
 		};
@@ -468,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 077EAEAE205D475D008F9D51 /* Validated.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "--PRODUCT-BUNDLE-IDENTIFIER-";
 			};
 			name = Release;
 		};

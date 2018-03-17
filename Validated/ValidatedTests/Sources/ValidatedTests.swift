@@ -3,9 +3,8 @@ import XCTest
 
 class ValidatedTests: XCTestCase {
     
-    #if SIMULATOR
     func testThatProjectFileHasNoEmbeddedBuildConfigurations() {
-        guard let projectFilePath = Bundle(for: ZeCampTests.self).infoDictionary?["projectFilePath"] as? String else {
+        guard let projectFilePath = Bundle(for: ValidatedTests.self).infoDictionary?["projectFilePath"] as? String else {
             XCTFail("The project file path should be specified in the info.plist file.")
             return
         }
@@ -23,6 +22,5 @@ class ValidatedTests: XCTestCase {
             XCTFail("There should be no build settings in the project file. Please move all settings to .xcconfig files. Found: \(buildSettings)")
         }
     }
-    #endif
     
 }

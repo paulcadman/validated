@@ -21,6 +21,10 @@
 		077EAEA8205D468F008F9D51 /* UITest.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAE9F205D468F008F9D51 /* UITest.xcconfig */; };
 		077EAEA9205D468F008F9D51 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAEA0205D468F008F9D51 /* Test.xcconfig */; };
 		077EAEAA205D468F008F9D51 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 077EAEA1205D468F008F9D51 /* Project.xcconfig */; };
+		07FBFD03205D683000E9746C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; };
+		07FBFD04205D683000E9746C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07FBFD06205D683900E9746C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; };
+		07FBFD07205D683900E9746C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,21 @@
 			remoteInfo = Validated;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07FA2366205D64B200236D50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07FBFD07205D683900E9746C /* RxCocoa.framework in Embed Frameworks */,
+				07FBFD04205D683000E9746C /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		073ABF46205D4ACC00261B80 /* ValidatedTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ValidatedTests.xcconfig; sourceTree = "<group>"; };
@@ -64,6 +83,8 @@
 		077EAEA0205D468F008F9D51 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		077EAEA1205D468F008F9D51 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		077EAEAE205D475D008F9D51 /* Validated.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Validated.xcconfig; sourceTree = "<group>"; };
+		07FBFD02205D683000E9746C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FBFD05205D683900E9746C /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FBFD06205D683900E9746C /* RxCocoa.framework in Frameworks */,
+				07FBFD03205D683000E9746C /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +151,8 @@
 		077EAE55205D407B008F9D51 = {
 			isa = PBXGroup;
 			children = (
+				07FBFD05205D683900E9746C /* RxCocoa.framework */,
+				07FBFD02205D683000E9746C /* RxSwift.framework */,
 				077EAE60205D407B008F9D51 /* Validated */,
 				077EAE95205D468F008F9D51 /* Configurations */,
 				077EAE75205D407C008F9D51 /* ValidatedTests */,
@@ -251,6 +276,7 @@
 				077EAE5B205D407B008F9D51 /* Frameworks */,
 				077EAE5C205D407B008F9D51 /* Resources */,
 				07E169AB205D5320009E4B65 /* ShellScript */,
+				07FA2366205D64B200236D50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,7 +487,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 077EAEAE205D475D008F9D51 /* Validated.xcconfig */;
 			buildSettings = {
-				PRODUCT_BUNDLE_IDENTIFIER = "--PRODUCT-BUNDLE-IDENTIFIER-";
 			};
 			name = Debug;
 		};
@@ -469,7 +494,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 077EAEAE205D475D008F9D51 /* Validated.xcconfig */;
 			buildSettings = {
-				PRODUCT_BUNDLE_IDENTIFIER = "--PRODUCT-BUNDLE-IDENTIFIER-";
 			};
 			name = Release;
 		};

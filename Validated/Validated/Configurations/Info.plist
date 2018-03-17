@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>GIT_STATUS</key>
-	<string></string>
-	<key>GIT_COMMIT</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -22,6 +18,10 @@
 	<string>$(VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(BUILD_NUMBER)</string>
+	<key>GIT_COMMIT</key>
+	<string></string>
+	<key>GIT_STATUS</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

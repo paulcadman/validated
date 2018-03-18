@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072DAB0C205F023E00CA96A3 /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072DAB0B205F023E00CA96A3 /* SwiftCheck.framework */; };
 		077EAE62205D407B008F9D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EAE61205D407B008F9D51 /* AppDelegate.swift */; };
 		077EAE69205D407C008F9D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077EAE68205D407C008F9D51 /* Assets.xcassets */; };
 		077EAE6C205D407C008F9D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077EAE6A205D407C008F9D51 /* LaunchScreen.storyboard */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		072DAB0B205F023E00CA96A3 /* SwiftCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		073ABF46205D4ACC00261B80 /* ValidatedTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ValidatedTests.xcconfig; sourceTree = "<group>"; };
 		073ABF49205D4B6C00261B80 /* ValidatedUITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ValidatedUITests.xcconfig; sourceTree = "<group>"; };
 		077EAE5E205D407B008F9D51 /* Validated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Validated.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072DAB0C205F023E00CA96A3 /* SwiftCheck.framework in Frameworks */,
 				07C6EA97205D7ED1003FDB66 /* RxCocoa.framework in Frameworks */,
 				07C6EA95205D7ECC003FDB66 /* RxSwift.framework in Frameworks */,
 			);
@@ -311,6 +314,7 @@
 		07FDA30C205D78D60075E411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				072DAB0B205F023E00CA96A3 /* SwiftCheck.framework */,
 				07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */,
 				07C6EA94205D7ECC003FDB66 /* RxSwift.framework */,
 				07FDA30F205D7CD00075E411 /* RxBlocking.framework */,

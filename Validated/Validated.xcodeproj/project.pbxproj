@@ -25,6 +25,7 @@
 		07C6EA97205D7ED1003FDB66 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */; };
 		07C6EA9C205EBF94003FDB66 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9B205EBF94003FDB66 /* ObservableType.swift */; };
 		07C6EA9E205EBFCE003FDB66 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9D205EBFCE003FDB66 /* Verifier.swift */; };
+		07C6EAA0205EDF29003FDB66 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9F205EDF29003FDB66 /* FormField.swift */; };
 		07FBFD03205D683000E9746C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; };
 		07FBFD04205D683000E9746C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FBFD06205D683900E9746C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; };
@@ -95,6 +96,7 @@
 		07C6EA96205D7ED1003FDB66 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C6EA9B205EBF94003FDB66 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		07C6EA9D205EBFCE003FDB66 /* Verifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifier.swift; sourceTree = "<group>"; };
+		07C6EA9F205EDF29003FDB66 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		07FBFD02205D683000E9746C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FBFD05205D683900E9746C /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDA308205D74CF0075E411 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				07FDA308205D74CF0075E411 /* FormModel.swift */,
+				07C6EA9F205EDF29003FDB66 /* FormField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C6EAA0205EDF29003FDB66 /* FormField.swift in Sources */,
 				077EAE62205D407B008F9D51 /* AppDelegate.swift in Sources */,
 				07FDA309205D74CF0075E411 /* FormModel.swift in Sources */,
 			);

@@ -26,14 +26,13 @@
 		07C6EA9C205EBF94003FDB66 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9B205EBF94003FDB66 /* ObservableType.swift */; };
 		07C6EA9E205EBFCE003FDB66 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9D205EBFCE003FDB66 /* Verifier.swift */; };
 		07C6EAA0205EDF29003FDB66 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EA9F205EDF29003FDB66 /* FormField.swift */; };
+		07C6EAA2205EFBBD003FDB66 /* FormFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6EAA1205EFBBD003FDB66 /* FormFieldTests.swift */; };
 		07FBFD03205D683000E9746C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; };
 		07FBFD04205D683000E9746C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD02205D683000E9746C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FBFD06205D683900E9746C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; };
 		07FBFD07205D683900E9746C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBFD05205D683900E9746C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FDA309205D74CF0075E411 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDA308205D74CF0075E411 /* FormModel.swift */; };
 		07FDA30B205D78620075E411 /* FormModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDA30A205D78620075E411 /* FormModelTests.swift */; };
-		07FDA30E205D78D60075E411 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDA30D205D78D60075E411 /* RxTest.framework */; };
-		07FDA310205D7CD00075E411 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDA30F205D7CD00075E411 /* RxBlocking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +96,7 @@
 		07C6EA9B205EBF94003FDB66 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
 		07C6EA9D205EBFCE003FDB66 /* Verifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifier.swift; sourceTree = "<group>"; };
 		07C6EA9F205EDF29003FDB66 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		07C6EAA1205EFBBD003FDB66 /* FormFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldTests.swift; sourceTree = "<group>"; };
 		07FBFD02205D683000E9746C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FBFD05205D683900E9746C /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDA308205D74CF0075E411 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
@@ -121,8 +121,6 @@
 			files = (
 				07C6EA97205D7ED1003FDB66 /* RxCocoa.framework in Frameworks */,
 				07C6EA95205D7ECC003FDB66 /* RxSwift.framework in Frameworks */,
-				07FDA310205D7CD00075E411 /* RxBlocking.framework in Frameworks */,
-				07FDA30E205D78D60075E411 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +140,7 @@
 				07C6EA98205D7F73003FDB66 /* Rx */,
 				077EAE76205D407C008F9D51 /* ValidatedTests.swift */,
 				07FDA30A205D78620075E411 /* FormModelTests.swift */,
+				07C6EAA1205EFBBD003FDB66 /* FormFieldTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -490,6 +489,7 @@
 				07C6EA9E205EBFCE003FDB66 /* Verifier.swift in Sources */,
 				077EAE77205D407C008F9D51 /* ValidatedTests.swift in Sources */,
 				07FDA30B205D78620075E411 /* FormModelTests.swift in Sources */,
+				07C6EAA2205EFBBD003FDB66 /* FormFieldTests.swift in Sources */,
 				07C6EA9C205EBF94003FDB66 /* ObservableType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,26 +7,31 @@ struct FormModel {
         case tooYoung
     }
     
+    struct Validators {
+        static func name(value: String) -> FieldState<String> {
+            if value.isEmpty {
+                return .invalid(value: value, reason: .emptyName)
+            } else {
+                return .valid(value: value)
+            }
+        }
+        
+        static func age(value: Int) -> FieldState<Int> {
+            if value < 18 {
+                return .invalid(value: .none, reason: .tooYoung)
+            } else {
+                return .valid(value: value)
+            }
+        }
+    }
+    
     struct Fields {
         var name: FormField<String> {
-            return FormField(initialState: .invalid(value: "", reason: .emptyName)) { input in
-                if input.isEmpty {
-                    return .invalid(value: input, reason: .emptyName)
-                } else {
-                    return .valid(value: input)
-                }
-            }
-            
+            return FormField(initialState: .invalid(value: "", reason: .emptyName), validator: Validators.name(value:))
         }
         
         var age: FormField<Int> {
-            return FormField(initialState: .invalid(value: .none, reason: .emptyAge)) { (input: Int) in
-                if input < 18 {
-                    return .invalid(value: .none, reason: .tooYoung)
-                } else {
-                    return .valid(value: input)
-                }
-            }
+            return FormField(initialState: .invalid(value: .none, reason: .emptyAge), validator: Validators.age(value:))
         }
     }
     

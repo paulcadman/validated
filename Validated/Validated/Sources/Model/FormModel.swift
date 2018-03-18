@@ -25,16 +25,6 @@ struct FormModel {
         }
     }
     
-    struct Fields {
-        var name: FormField<String> {
-            return FormField(initialState: .invalid(value: "", reason: .emptyName), validator: Validators.name(value:))
-        }
-        
-        var age: FormField<Int> {
-            return FormField(initialState: .invalid(value: .none, reason: .emptyAge), validator: Validators.age(value:))
-        }
-    }
-    
     enum State: Equatable {
         case valid(name: String, age: Int)
         case invalid(name: String?, age: Int?, reasons: Set<Reason>)
@@ -45,9 +35,8 @@ struct FormModel {
     var updateAge: AnyObserver<Int>
     
     init() {
-        let fields = Fields()
-        let name = fields.name
-        let age = fields.age
+        let name = FormField(initialState: .invalid(value: "", reason: .emptyName), validator: Validators.name(value:))
+        let age = FormField(initialState: .invalid(value: .none, reason: .emptyAge), validator: Validators.age(value:))
         
         updateName = name.update
         updateAge = age.update

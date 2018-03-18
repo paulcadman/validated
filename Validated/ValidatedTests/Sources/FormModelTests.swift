@@ -1,8 +1,13 @@
 import XCTest
+import Foundation
 @testable import Validated
 
 class FormModelTests: XCTestCase {
-    func testInitialStateIsValid() {
-        FormModel().state.verify(startsWith: [.valid])
+    func testInitialStateIsInvalid() throws {
+        let model = FormModel()
+        model.state.assert(startsWith: [.invalid]) {
+            model.update()
+            model.update()
+        }
     }
 }

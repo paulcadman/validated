@@ -11,7 +11,7 @@ struct FormModel {
     private var _state = BehaviorSubject<State>(value: .invalid)
     
     init() {
-        state = _state.asObservable().debug()
+        state = _state.asObservable()
     }
     
     func update() {

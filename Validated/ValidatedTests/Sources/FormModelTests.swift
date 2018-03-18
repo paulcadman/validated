@@ -5,9 +5,6 @@ import Foundation
 class FormModelTests: XCTestCase {
     func testInitialStateIsInvalid() throws {
         let model = FormModel()
-        model.state.assert(startsWith: [.invalid]) {
-            model.update()
-            model.update()
-        }
+        model.state.assert(startsWith: [.invalid]) { }
     }
 }

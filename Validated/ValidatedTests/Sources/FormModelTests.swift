@@ -5,12 +5,25 @@ import Foundation
 class FormModelTests: XCTestCase {
     func testInitialStateIsInvalid() throws {
         let model = FormModel()
-        model.state.assert(startsWith: [.invalid(reason: .emptyName)]) { }
+        model.state.assert(startsWith: [
+            .invalid(
+                name: "",
+                reason: .emptyName
+            )
+        ]) { }
     }
     
     func testUpdateToNonEmptyStringIsValid() throws {
         let model = FormModel()
-        model.state.assert(startsWith: [.invalid(reason: .emptyName), .valid]) {
+        model.state.assert(startsWith: [
+            .invalid(
+                name: "",
+                reason: .emptyName
+            ),
+            .valid(
+                name: "h"
+            )
+        ]) {
             model.updateName.onNext("h")
         }
     }
@@ -18,9 +31,18 @@ class FormModelTests: XCTestCase {
     func testUpdateNonEmptyToEmptyIsInvalid() throws {
         let model = FormModel()
         model.state.assert(startsWith: [
-            .invalid(reason: .emptyName),
-            .valid,
-            .invalid(reason: .emptyName)]) {
+            .invalid(
+                name: "",
+                reason: .emptyName)
+            ,
+            .valid(
+                name: "h"
+            ),
+            .invalid(
+                name: "",
+                reason: .emptyName
+            )
+        ]) {
             model.updateName.onNext("h")
             model.updateName.onNext("")
         }
@@ -28,7 +50,12 @@ class FormModelTests: XCTestCase {
     
     func testUpdateToEmptyStringRemainsInvalid() throws {
         let model = FormModel()
-        model.state.assert(startsWith: [.invalid(reason: .emptyName)]) {
+        model.state.assert(startsWith: [
+            .invalid(
+                name: "",
+                reason: .emptyName
+            )
+        ]) {
             model.updateName.onNext("")
         }
     }
